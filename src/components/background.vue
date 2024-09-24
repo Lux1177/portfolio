@@ -1,0 +1,177 @@
+<script lang="ts" setup>
+
+</script>
+
+<template>
+
+	<div class="gradient-bg">
+		<div class="lines">
+			<div class="line"/>
+			<div class="line"/>
+			<div class="line"/>
+			<div class="line"/>
+			<div class="line"/>
+			<div class="line"/>
+			<div class="line"/>
+			<div class="line"/>
+			<div class="line"/>
+			<div class="line"/>
+		</div>
+	</div>
+
+</template>
+
+<style scoped>
+
+.gradient-bg {
+	@apply min-h-screen h-[300vh] w-full bg-[#dad9dd] absolute top-0 left-0 -z-50 light-bg-gradient dark:dark-bg-gradient;
+	animation: gradient-animation 300s ease infinite;
+	background-size: 960% 960%;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.lines {
+	height: 100%;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 90vw;
+	z-index: -49;
+}
+
+.line {
+	@apply absolute w-[1px] h-full top-0 left-1/2 bg-[#cfd2d5] dark:bg-[#13171a] overflow-hidden after:block after:absolute
+	-z-40 after:h-[15vh] after:-top-1/4 after:w-full after:left-0 after:bg-gradient-to-b from-[#cfd2d5] to-[#a7acb2]
+	after:-z-30 dark:from-gray-800/50 dark:to-white/20;
+}
+
+.line::after {
+	-webkit-animation: drop 20s 0s infinite;
+	animation: drop 20s 0s infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-timing-function: cubic-bezier(0.1, 0.1, 0, 0.1);
+	animation-timing-function: cubic-bezier(0.1, 0.1, 0.1, 0.1);
+}
+
+.line:nth-child(1) {
+	margin-left: -50%;
+}
+
+.line:nth-child(1)::after {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+.line:nth-child(2) {
+	margin-left: -40%;
+}
+
+.line:nth-child(2)::after {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+.line:nth-child(3) {
+	margin-left: -30%;
+}
+
+.line:nth-child(3)::after {
+	-webkit-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+
+.line:nth-child(4) {
+	margin-left: -20%;
+}
+
+.line:nth-child(4)::after {
+	-webkit-animation-delay: 0.9s;
+	animation-delay: 0.9s;
+}
+
+.line:nth-child(5) {
+	margin-left: -10%;
+}
+
+.line:nth-child(5)::after {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.line:nth-child(6) {
+	margin-left: 0;
+}
+
+.line:nth-child(6)::after {
+	-webkit-animation-delay: 2.3s;
+	animation-delay: 2.3s;
+}
+
+.line:nth-child(7) {
+	margin-left: 10%;
+}
+
+.line:nth-child(7)::after {
+	-webkit-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+}
+
+.line:nth-child(8) {
+	margin-left: 20%;
+}
+
+.line:nth-child(8)::after {
+	-webkit-animation-delay: 1.9s;
+	animation-delay: 1.9s;
+}
+
+.line:nth-child(9) {
+	margin-left: 30%;
+}
+
+.line:nth-child(9)::after {
+	-webkit-animation-delay: 1.1s;
+	animation-delay: 1.1s;
+}
+
+.line:nth-child(10) {
+	margin-left: 40%;
+}
+
+.line:nth-child(10)::after {
+	-webkit-animation-delay: 2.1s;
+	animation-delay: 2.1s;
+}
+
+@-webkit-keyframes drop {
+	0% {
+		top: -50%;
+	}
+	100% {
+		top: 110%;
+	}
+}
+
+@keyframes drop {
+	0% {
+		top: -50%;
+	}
+	100% {
+		top: 110%;
+	}
+}
+
+</style>
