@@ -9,34 +9,34 @@ import {Icon} from "@iconify/vue";
 		<Slider :speed="65">
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
-			<span class="marquee__item icon"> <Icon class="icon" icon="mdi:white-balance-sunny"/> </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 		</Slider>
 	</div>
 

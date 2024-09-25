@@ -21,10 +21,10 @@
 
 </template>
 
-<style scoped>
+<style>
 
-.gradient-bg {
-	@apply min-h-screen h-[300vh] w-full bg-[#dad9dd] absolute top-0 left-0 -z-50 light-bg-gradient dark:dark-bg-gradient;
+#app {
+	@apply min-h-max absolute top-0 left-0 h-full w-full bg-[#dad9dd] -z-50 light-bg-gradient dark:dark-bg-gradient;
 	animation: gradient-animation 300s ease infinite;
 	background-size: 960% 960%;
 }

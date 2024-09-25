@@ -11,6 +11,11 @@ import Email from "@/components/grid-items/email.vue";
 import Education from "@/components/grid-items/education.vue";
 import type {IGrid} from "@/utils/IGrid";
 import CrmSystem from "@/components/grid-items/projects/crm-system.vue";
+import VueSneakers from "@/components/grid-items/projects/vue-sneakers.vue";
+import IpdcFinance from "@/components/grid-items/projects/ipdc-finance.vue";
+import AvaProject from "@/components/grid-items/projects/ava-project.vue";
+import EBook from "@/components/grid-items/projects/e-book.vue";
+import ApiStarter from "@/components/grid-items/projects/api-starter.vue";
 
 export const mainLayout: IGrid[] = [
 	{
@@ -108,7 +113,47 @@ export const mainLayout: IGrid[] = [
 		w: 6,
 		x: 0,
 		y: 20,
-	}
+	},
+	{
+		i: 13,
+		component: VueSneakers,
+		h: 13,
+		w: 6,
+		x: 6,
+		y: 22,
+	},
+	{
+		i: 14,
+		component: EBook,
+		h: 13,
+		w: 6,
+		x: 0,
+		y: 33,
+	},
+	{
+		i: 15,
+		component: AvaProject,
+		h: 13,
+		w: 6,
+		x: 6,
+		y: 35,
+	},
+	{
+		i: 16,
+		component: IpdcFinance,
+		h: 13,
+		w: 6,
+		x: 0,
+		y: 46,
+	},
+	{
+		i: 17,
+		component: ApiStarter,
+		h: 13,
+		w: 6,
+		x: 6,
+		y: 48,
+	},
 ]
 
 export const mainAboutLayout: IGrid[] = [

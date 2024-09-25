@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 
-import {reactive} from "vue";
+import {reactive, watch} from "vue";
 import Background from "@/components/background.vue";
 import Grid from "@/components/grid.vue";
 import Navbar from "@/components/Navbar.vue";
 import {mainLayout} from "@/utils/main-layouts";
+import {useNavbarStateStore} from "@/store/navbar";
 
 
 const layout = reactive(mainLayout)
@@ -19,25 +20,39 @@ const changeX = () => {
 		index++
 	}
 }
+
+watch(useNavbarStateStore().$state, () => {
+	ex.value = 'qwerty'
+})
+
 </script>
 
 <template>
 
-	<Background/>
-	<Navbar/>
-
-	<div class="mx-auto 2xl:w-[70%] xl:w-[85%] lg:w-[90%] md:w-[95%] sm:w-[95%]">
-		<Grid :cols="12" :layout="layout"/>
+	<div class="overflow-hidden min-h-max">
+		<Background/>
+		<Navbar/>
+		<div class="mb-12 mx-auto 2xl:w-[70%] xl:w-[85%] lg:w-[90%] md:w-[95%] sm:w-[95%]">
+			<Grid :cols="12" :layout="layout"/>
+		</div>
 	</div>
 
 </template>
 
-<style scoped>
+<style>
+
+@import "assets/base.css";
 
 * {
 	font-family: Montserrat, 'Roboto Condensed', sans-serif;
 }
 
-@import "assets/base.css";
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	scroll-behavior: smooth;
+}
 
 </style>
