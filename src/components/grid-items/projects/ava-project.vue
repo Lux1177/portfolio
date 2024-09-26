@@ -9,7 +9,7 @@ const link = 'https://github.com/Lux1177/AVA_project'
 
 <template>
 	<Project :project-link="link" :technologies="technologies" project-name="AVA Project">
-		<img alt="AVA Project home page" class="w-full h-full object-fill" src="@/assets/img/ava-project.png">
+		<img alt="AVA Project home page" class="w-full h-full object-cover" src="@/assets/img/ava-project.png">
 	</Project>
 </template>
 

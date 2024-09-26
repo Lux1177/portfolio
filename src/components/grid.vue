@@ -2,34 +2,28 @@
 
 import {GridItem, GridLayout} from "vue3-drr-grid-layout";
 import GridItemContent from "@/components/grid-items/grid-item-content.vue";
-import {mdLayout} from "@/utils/md-layouts";
 
 defineProps({
 	layout: {
 		type: Array,
 		required: true,
 	},
-	cols: {
-		type: Number,
-		default: 12
-	},
 	rowHeight: {
 		type: Number,
-		default: 30
+		required: true,
 	}
 })
+
+
 </script>
 
 <template>
 	<grid-layout
-		:breakpoints="{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }"
-		:col-num="cols"
-		:cols="{ lg: 12, md: 10, sm: 12, xs: 12, xxs: 12 }"
+		:col-num="12"
 		:isResizable="false"
 		:layout="layout"
 		:margin="[15, 15, 15, 15]"
-		:responsiveLayouts="{md: mdLayout}"
-		:row-height="22"
+		:row-height="rowHeight"
 		:useCssTransforms="true"
 	>
 		<template #default="{ gridItemProps }">
@@ -70,11 +64,13 @@ defineProps({
 <style scoped>
 
 .vue-grid-item {
-	background-color: transparent;
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	border-radius: 1.6rem;
 	box-sizing: border-box;
-	touch-action: none;
 	transition: all .350s ease-in-out;
 	transition-property: left, top, right;
+	@apply touch-none sm:!touch-auto;
 }
 
 .vue-grid-item.no-touch {

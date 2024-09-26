@@ -11,7 +11,7 @@ watch(tab, () => {
 </script>
 
 <template>
-	<nav class="flex items-center justify-center py-16 text-sm dark:text-wh tabs">
+	<nav class="flex items-center justify-center py-16 text-sm dark:text-wh tabs select-none">
 		<div
 			class="flex bg-[#e7e7e9]/80 rounded-full shadow p-[0.30rem] hover:bg-[#ededf3]/90 relative transition-colors
 			duration-300 overflow-hidden dark:bg-[#16181f]/80 dark:border-borderDark dark:border dark:hover:bg-[#140f1d]/90 dark:text-wh">

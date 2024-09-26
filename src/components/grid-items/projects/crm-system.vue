@@ -9,7 +9,7 @@ const link = 'https://github.com/Lux1177/crm-system-nuxt'
 
 <template>
 	<Project :project-link="link" :technologies="technologies" project-name="Crm System">
-		<img alt="" class="w-full h-full object-fill" src="@/assets/img/crm-system.png">
+		<img alt="" class="w-full h-full object-cover" src="@/assets/img/crm-system.png">
 	</Project>
 </template>
 
