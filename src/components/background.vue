@@ -4,19 +4,17 @@
 
 <template>
 
-	<div class="gradient-bg">
-		<div class="lines">
-			<div class="line"/>
-			<div class="line"/>
-			<div class="line"/>
-			<div class="line"/>
-			<div class="line"/>
-			<div class="line"/>
-			<div class="line"/>
-			<div class="line"/>
-			<div class="line"/>
-			<div class="line"/>
-		</div>
+	<div class="lines mx-auto h-full min-h-min right-0 top-0 w-[90vw] -z-40">
+		<div class="line"/>
+		<div class="line"/>
+		<div class="line"/>
+		<div class="line"/>
+		<div class="line"/>
+		<div class="line"/>
+		<div class="line"/>
+		<div class="line"/>
+		<div class="line"/>
+		<div class="line"/>
 	</div>
 
 </template>
@@ -24,7 +22,7 @@
 <style>
 
 #app {
-	@apply min-h-max absolute top-0 left-0 h-full w-full bg-[#dad9dd] -z-50 light-bg-gradient dark:dark-bg-gradient;
+	@apply min-h-max h-full w-full bg-[#dad9dd] light-bg-gradient dark:dark-bg-gradient;
 	animation: gradient-animation 300s ease infinite;
 	background-size: 960% 960%;
 }
@@ -41,20 +39,11 @@
 	}
 }
 
-.lines {
-	height: 100%;
-	margin: auto;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 90vw;
-	z-index: -49;
-}
 
 .line {
-	@apply absolute w-[1px] h-full top-0 left-1/2 bg-[#cfd2d5] dark:bg-[#13171a] overflow-hidden after:block after:absolute
-	-z-40 after:h-[15vh] after:-top-1/4 after:w-full after:left-0 after:bg-gradient-to-b from-[#cfd2d5] to-[#a7acb2]
-	after:-z-30 dark:from-gray-800/50 dark:to-white/20;
+	@apply absolute w-[1px] min-h-max h-full top-0 left-1/2 bg-[#cfd2d5] dark:bg-[#13171a] overflow-hidden after:block after:absolute
+	after:h-[15vh] after:-top-1/4 after:w-full after:left-0 after:bg-gradient-to-b from-[#cfd2d5] to-[#a7acb2]
+	dark:from-gray-800/50 dark:to-white/20;
 }
 
 .line::after {
@@ -64,6 +53,17 @@
 	animation-fill-mode: forwards;
 	-webkit-animation-timing-function: cubic-bezier(0.1, 0.1, 0, 0.1);
 	animation-timing-function: cubic-bezier(0.1, 0.1, 0.1, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+	.line::after {
+		-webkit-animation: drop 40s 0s infinite;
+		animation: drop 40s 0s infinite;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		-webkit-animation-timing-function: cubic-bezier(0.1, 0.1, 0, 0.1);
+		animation-timing-function: cubic-bezier(0.1, 0.1, 0.1, 0.1);
+	}
 }
 
 .line:nth-child(1) {

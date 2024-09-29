@@ -22,7 +22,8 @@ defineProps({
 		   class="mx-auto transition-colors duration-300 dark:text-[#c7c8ca] dark:hover:text-white text-[#1d1d1d]
 				hover:text-black w-full h-full flex justify-center items-center"
 		   target="_blank">
-			<Icon :icon="icon" class="h-[135%] w-[135%]"/>
+			<Icon :icon="icon"
+			      class="h-[135%] w-[135%] 2xl:h-full 2xl:w-full xl:h-full xl:w-full md:h-full md:w-full sm:h-full sm:w-full max-sm:w-full max-sm:h-full"/>
 		</a>
 	</div>
 

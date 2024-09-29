@@ -69,9 +69,9 @@ import {Icon} from "@iconify/vue";
 		</div>
 
 		<div class="uppercase font-semibold">
-			<p class="text-[#737777] text-sm mb-1">Tech Stack</p>
-			<p class="text-2xl flex gap-1.5 dark:text-wh">I use <span class="flex items-center text-red-600"><Icon
-				name="mdi:cards-heart"/></span>
+			<p class="text-[#737777] text-sm mb-1 max-sm:text-base">Tech Stack</p>
+			<p class="text-2xl flex gap-1.5 dark:text-wh max-sm:text-4xl">I use <span class="flex items-center text-red-600"><Icon
+				icon="mdi:cards-heart"/></span>
 			</p>
 		</div>
 
@@ -93,7 +93,7 @@ import {Icon} from "@iconify/vue";
 }
 
 .tech-icon {
-	@apply w-12 h-12;
+	@apply w-12 h-12 max-sm:w-14 max-sm:h-14;
 }
 
 </style>

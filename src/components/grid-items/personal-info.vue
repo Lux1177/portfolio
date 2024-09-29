@@ -4,9 +4,9 @@
 
 
 	<div class="personal-info">
-		<div class="flex items-center justify-center gap-10 mb-6">
-			<div class="rounded-full w-1/3"><img alt="avatar" class="rounded-full" src="/avatar.png"></div>
-			<h2 class="text-[2.3rem] font-bold">Umarjon Alimdjanov</h2>
+		<div class="flex items-center max-sm:flex-col max-sm:gap-4 justify-center gap-10 mb-6">
+			<div class="rounded-full w-1/3 max-sm:w-1/5"><img alt="avatar" class="rounded-full" src="/avatar.png"></div>
+			<h2 class="text-[2.3rem] font-bold max-sm:text-center max-sm:font-semibold">Umarjon Alimdjanov</h2>
 		</div>
 		<p class="font-light">I am passionate about building beautiful and functional user interfaces.</p>
 	</div>

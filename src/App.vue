@@ -25,7 +25,7 @@ watch(useNavbarStateStore().$state, () => {
 
 watch(width, () => {
 	screenLayout(layout, allLayout, aboutLayout, workLayout, rowHeight)
-}, {})
+}, {deep: true})
 
 onMounted(() => {
 	screenLayout(layout, allLayout, aboutLayout, workLayout, rowHeight)
@@ -53,14 +53,17 @@ onMounted(() => {
 	font-family: Montserrat, 'Roboto Condensed', sans-serif;
 }
 
+
 body::-webkit-scrollbar {
 	display: none;
 }
 
 body {
-	@apply dark:bg-gray-900 bg-wh;
 	scroll-behavior: smooth;
 }
 
+#app {
+	position: relative;
+}
 
 </style>

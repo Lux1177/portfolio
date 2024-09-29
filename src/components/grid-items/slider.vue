@@ -36,7 +36,7 @@ const isReversed = computed(() => props.reverse);
 
 <style>
 .marquee {
-	@apply flex items-center justify-center left-1/2 right-1/2 mx-[-50vw] overflow-hidden relative w-[100vw];
+	@apply flex items-center justify-center overflow-hidden relative w-[100vw];
 	--gap: 0.5rem;
 	gap: var(--gap);
 }

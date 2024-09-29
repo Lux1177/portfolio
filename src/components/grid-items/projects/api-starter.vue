@@ -8,7 +8,7 @@ const link = 'https://github.com/Lux1177/api-starter-kit'
 </script>
 
 <template>
-	<Project :project-link="link" :technologies="technologies" project-name="Back-end starter-kit on Symfony">
+	<Project :project-link="link" :technologies="technologies" project-name="Symfony Starter-kit">
 		<img alt="Api Starter Swagger" class="w-full h-full object-cover" src="@/assets/img/api-starter-kit.png">
 	</Project>
 </template>
