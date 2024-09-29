@@ -21,19 +21,6 @@ defineProps<{
 		:useCssTransforms="true"
 	>
 		<template #default="{ gridItemProps }">
-			<!-- | gridItemProps props from GridLayout | -->
-			<!--breakpointCols: props.cols-->
-			<!--colNum: props.colNum-->
-			<!--containerWidth: width.value-->
-			<!--isDraggable: props.isDraggable-->
-			<!--isResizable: props.isResizable-->
-			<!--lastBreakpoint: lastBreakpoint.value-->
-			<!--margin: props.margin-->
-			<!--maxRows: props.maxRows-->
-			<!--responsive: props.responsive-->
-			<!--rowHeight: props.rowHeight-->
-			<!--useCssTransforms: props.useCssTransforms-->
-			<!--width: width.value-->
 			<grid-item
 				v-for="item in layout"
 				:key="item.i"

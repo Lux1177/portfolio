@@ -39,7 +39,7 @@ onMounted(() => {
 	<div class="overflow-hidden min-h-max">
 		<Background/>
 		<Navbar/>
-		<div class="mb-24 mx-auto 2xl:w-[70%] xl:w-[85%] lg:w-[90%] md:w-[95%] sm:w-[95%]">
+		<div class="h-auto mb-36 pb-36 mx-auto 2xl:w-[70%] xl:w-[85%] lg:w-[90%] md:w-[95%] sm:w-[95%]">
 			<Grid :cols="12" :layout="layout" :row-height="rowHeight"/>
 		</div>
 	</div>
@@ -66,5 +66,4 @@ body {
 #app {
 	position: relative;
 }
-
 </style>
