@@ -15,8 +15,8 @@
 	</div>
 </template>
 
-<script setup>
-import { computed } from 'vue';
+<script lang="ts" setup>
+import {computed, type ComputedRef} from 'vue';
 
 const props = defineProps({
 	speed: {
@@ -29,8 +29,8 @@ const props = defineProps({
 	},
 });
 
-const animationSpeed = computed(() => `${ props.speed }s`);
-const isReversed = computed(() => props.reverse);
+const animationSpeed: ComputedRef<string> = computed(() => `${props.speed}s`);
+const isReversed: ComputedRef<boolean> = computed(() => props.reverse);
 
 </script>
 

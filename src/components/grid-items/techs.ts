@@ -1,9 +1,9 @@
-interface Itech {
+interface ITech {
 	name: string;
 	icon: string;
 }
 
-export const techs: Itechs[] = [
+export const techs: ITech[] = [
 	{
 		name: 'HTML',
 		icon: 'devicon:html5',

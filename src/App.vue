@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-import {onMounted, reactive, ref, watch} from "vue";
+import {onMounted, reactive, type Ref, ref, watch} from "vue";
 import Background from "@/components/background.vue";
 import Navbar from "@/components/Navbar.vue";
 import {mainAboutLayout, mainAllLayout, mainLayout, mainWorkLayout} from "@/utils/main-layouts";
@@ -8,14 +8,15 @@ import Grid from "@/components/grid.vue";
 import {useNavbarStateStore} from "@/store/navbar";
 import {screenLayout, tabLayout} from "@/utils/layoutChagers";
 import {useWindowSize} from '@vueuse/core'
+import type {IGrid} from "@/utils/IGrid";
 
 const {width} = useWindowSize()
 
-const layout = reactive(mainLayout)
-let allLayout = mainAllLayout
-let aboutLayout = mainAboutLayout
-let workLayout = mainWorkLayout
-const rowHeight = ref(22)
+const layout: IGrid[] = reactive(mainLayout)
+let allLayout: IGrid[] = mainAllLayout
+let aboutLayout: IGrid[] = mainAboutLayout
+let workLayout: IGrid[] = mainWorkLayout
+const rowHeight: Ref<number> = ref(22)
 
 
 watch(useNavbarStateStore().$state, () => {

@@ -55,7 +55,7 @@ defineProps({
 			</div>
 
 			<div class="dark:text-gray-400/80 text-[#211e4c] flex gap-1.5 font-bold flex-wrap">
-				<span v-for="tech in technologies" :key="tech"
+				<span v-for="tech in technologies" :key="tech as string"
 				      class="text-[0.77rem] dark:bg-gray-400/25 bg-black/10 rounded-full px-2 py-0.5">
 					{{ tech }}
 				</span>

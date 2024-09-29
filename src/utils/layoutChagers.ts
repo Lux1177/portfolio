@@ -3,6 +3,7 @@ import {mobileAboutLayout, mobileAllLayout, mobileWorkLayout} from "@/utils/mobi
 import {mdAboutLayout, mdAllLayout, mdWorkLayout} from "@/utils/md-layouts";
 import {useNavbarStateStore} from "@/store/navbar";
 import {mainAboutLayout, mainAllLayout, mainWorkLayout} from "@/utils/main-layouts";
+import type {Ref} from "vue";
 
 export function changeLayout(oldLayout: IGrid[], newLayout: IGrid[]): void {
 	let index: number = 0
@@ -15,7 +16,7 @@ export function changeLayout(oldLayout: IGrid[], newLayout: IGrid[]): void {
 	}
 }
 
-export function screenLayout(layout: IGrid[], allLayout: IGrid[], aboutLayout: IGrid[], workLayout: IGrid[], rowHeight): void {
+export function screenLayout(layout: IGrid[], allLayout: IGrid[], aboutLayout: IGrid[], workLayout: IGrid[], rowHeight: Ref<number>): void {
 	const navState: string = useNavbarStateStore().$state.tab
 
 	if (screen.width < 800) {

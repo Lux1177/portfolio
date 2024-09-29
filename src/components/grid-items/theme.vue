@@ -1,22 +1,23 @@
-<script setup>
-import { Icon } from '@iconify/vue';
-import { onMounted, ref, watch } from 'vue';
-import { usePreferredColorScheme } from '@vueuse/core'
+<script lang="ts" setup>
+import {Icon} from '@iconify/vue';
+import {onMounted, type Ref, ref, watch} from 'vue';
+import {usePreferredColorScheme} from '@vueuse/core'
 
-
-const theme = ref('')
+const theme: Ref<string> = ref('')
 
 watch(theme, () => {
-	document.querySelector('html').removeAttribute('class')
-	document.querySelector('html').classList.add(theme.value)
+	const html: HTMLHtmlElement = document.querySelector('html') as HTMLHtmlElement
+	html.removeAttribute('class')
+	html.classList.add(theme.value)
 	localStorage.setItem('theme', theme.value)
 })
 
 onMounted(() => {
-	if ( localStorage.getItem('theme') ) {
-		theme.value = localStorage.getItem('theme')
+	if (localStorage.getItem('theme')) {
+		theme.value = localStorage.getItem('theme') as string
 	} else {
-		theme.value = usePreferredColorScheme()
+		const preferredTheme = usePreferredColorScheme()
+		theme.value = preferredTheme.value
 		localStorage.setItem('theme', theme.value)
 	}
 })

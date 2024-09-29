@@ -1,3 +1,5 @@
+import type {Component} from "vue";
+
 export interface IGrid {
 	i: number;
 	component: Component;

@@ -2,18 +2,12 @@
 
 import {GridItem, GridLayout} from "vue3-drr-grid-layout";
 import GridItemContent from "@/components/grid-items/grid-item-content.vue";
+import type {IGrid} from "@/utils/IGrid";
 
-defineProps({
-	layout: {
-		type: Array,
-		required: true,
-	},
-	rowHeight: {
-		type: Number,
-		required: true,
-	}
-})
-
+defineProps<{
+	layout: IGrid[],
+	rowHeight: number,
+}>()
 
 </script>
 
@@ -49,9 +43,6 @@ defineProps({
 				:x="item.x"
 				:y="item.y"
 				v-bind="gridItemProps"
-				@move="move"
-				@moved="moved"
-				@resize="resize"
 			>
 				<grid-item-content>
 					<component :is="item.component"/>
