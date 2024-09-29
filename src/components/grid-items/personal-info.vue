@@ -5,7 +5,8 @@
 
 	<div class="personal-info">
 		<div class="flex items-center max-sm:flex-col max-sm:gap-4 justify-center gap-10 mb-6">
-			<div class="rounded-full w-1/3 max-sm:w-1/5"><img alt="avatar" class="rounded-full" src="@/assets/img/hello.png">
+			<div class="rounded-full w-1/4 max-sm:w-1/5 h-1/4"><img alt="avatar" class="rounded-full"
+			                                                        src="@/assets/img/hello.png">
 			</div>
 			<h2 class="text-[2.3rem] font-bold max-sm:text-center max-sm:font-semibold">Umarjon Alimdjanov</h2>
 		</div>
