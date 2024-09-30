@@ -17,7 +17,7 @@ let allLayout: IGrid[] = mainAllLayout
 let aboutLayout: IGrid[] = mainAboutLayout
 let workLayout: IGrid[] = mainWorkLayout
 
-const rowHeight: Ref<number> = ref(22)
+const rowHeight: Ref<number> = ref(25)
 const isDraggable: Ref<boolean> = ref(true)
 
 watch(useNavbarStateStore().$state, () => {
