@@ -32,15 +32,6 @@ export default {
 		'./src/**/*.{vue,js,ts,jsx,tsx}',
 	],
 	theme: {
-		fontSize: {
-			sm: '0.88rem',
-			base: '1.13rem',
-			xl: '1.38rem',
-			'2xl': '1.683rem',
-			'3xl': '2.093rem',
-			'4xl': '2.591rem',
-			'5xl': '3.292rem',
-		},
 		extend: {
 			colors: {
 				borderDark: '#31363e',
