@@ -6,7 +6,25 @@ import {Icon} from "@iconify/vue";
 <template>
 
 	<div class="sliding-text-container">
-		<Slider :speed="65">
+		<Slider :speed="100">
+			<span class="marquee__item font-[350]"> personal </span>
+			<span class="marquee__item font-bold"> portfolio </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
+			<span class="marquee__item font-[350]"> personal </span>
+			<span class="marquee__item font-bold"> portfolio </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
+			<span class="marquee__item font-[350]"> personal </span>
+			<span class="marquee__item font-bold"> portfolio </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
+			<span class="marquee__item font-[350]"> personal </span>
+			<span class="marquee__item font-bold"> portfolio </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
+			<span class="marquee__item font-[350]"> personal </span>
+			<span class="marquee__item font-bold"> portfolio </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
+			<span class="marquee__item font-[350]"> personal </span>
+			<span class="marquee__item font-bold"> portfolio </span>
+			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
 			<span class="marquee__item font-[350]"> personal </span>
 			<span class="marquee__item font-bold"> portfolio </span>
 			<span class="marquee__item icon"> <Icon class="icon" icon="solar:sun-2-bold-duotone"/> </span>
