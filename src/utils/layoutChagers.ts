@@ -16,7 +16,7 @@ export function changeLayout(oldLayout: IGrid[], newLayout: IGrid[]): void {
 	}
 }
 
-export function screenLayout(layout: IGrid[], allLayout: IGrid[], aboutLayout: IGrid[], workLayout: IGrid[], rowHeight: Ref<number>): void {
+export function screenLayout(layout: IGrid[], allLayout: IGrid[], aboutLayout: IGrid[], workLayout: IGrid[], rowHeight: Ref<number>, isDraggable: Ref<boolean>): void {
 	const navState: string = useNavbarStateStore().$state.tab
 
 	if (screen.width < 800) {
@@ -30,6 +30,8 @@ export function screenLayout(layout: IGrid[], allLayout: IGrid[], aboutLayout: I
 		}
 
 		rowHeight.value = 30
+		isDraggable.value = false
+
 		changeLayout(allLayout, mobileAllLayout)
 		changeLayout(aboutLayout, mobileAboutLayout)
 		changeLayout(workLayout, mobileWorkLayout)
@@ -45,10 +47,12 @@ export function screenLayout(layout: IGrid[], allLayout: IGrid[], aboutLayout: I
 		}
 
 		rowHeight.value = 11
+		isDraggable.value = true
+
 		changeLayout(allLayout, mdAllLayout)
 		changeLayout(aboutLayout, mdAboutLayout)
 		changeLayout(workLayout, mdWorkLayout)
-	} else if (screen.width >= 1200) {
+	} else if (screen.width > 1200) {
 
 		if (navState === 'all') {
 			changeLayout(layout, mainAllLayout)
@@ -59,6 +63,8 @@ export function screenLayout(layout: IGrid[], allLayout: IGrid[], aboutLayout: I
 		}
 
 		rowHeight.value = 22
+		isDraggable.value = true
+
 		changeLayout(allLayout, mainAllLayout)
 		changeLayout(aboutLayout, mainAboutLayout)
 		changeLayout(workLayout, mainWorkLayout)

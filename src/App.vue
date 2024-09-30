@@ -16,8 +16,9 @@ const layout: IGrid[] = reactive(mainLayout)
 let allLayout: IGrid[] = mainAllLayout
 let aboutLayout: IGrid[] = mainAboutLayout
 let workLayout: IGrid[] = mainWorkLayout
-const rowHeight: Ref<number> = ref(22)
 
+const rowHeight: Ref<number> = ref(22)
+const isDraggable: Ref<boolean> = ref(true)
 
 watch(useNavbarStateStore().$state, () => {
 	tabLayout(layout, allLayout, aboutLayout, workLayout)
@@ -25,11 +26,11 @@ watch(useNavbarStateStore().$state, () => {
 
 
 watch(width, () => {
-	screenLayout(layout, allLayout, aboutLayout, workLayout, rowHeight)
+	screenLayout(layout, allLayout, aboutLayout, workLayout, rowHeight, isDraggable)
 }, {deep: true})
 
 onMounted(() => {
-	screenLayout(layout, allLayout, aboutLayout, workLayout, rowHeight)
+	screenLayout(layout, allLayout, aboutLayout, workLayout, rowHeight, isDraggable)
 })
 
 </script>
@@ -40,7 +41,7 @@ onMounted(() => {
 		<Background/>
 		<Navbar/>
 		<div class="h-auto mb-36 pb-36 mx-auto 2xl:w-[70%] xl:w-[85%] lg:w-[90%] md:w-[95%] sm:w-[95%]">
-			<Grid :cols="12" :layout="layout" :row-height="rowHeight"/>
+			<Grid :cols="12" :is-draggable="isDraggable" :layout="layout" :row-height="rowHeight"/>
 		</div>
 	</div>
 

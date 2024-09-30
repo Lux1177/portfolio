@@ -7,6 +7,7 @@ import type {IGrid} from "@/utils/IGrid";
 defineProps<{
 	layout: IGrid[],
 	rowHeight: number,
+	isDraggable: boolean,
 }>()
 
 </script>
@@ -14,6 +15,7 @@ defineProps<{
 <template>
 	<grid-layout
 		:col-num="12"
+		:is-draggable="isDraggable"
 		:isResizable="false"
 		:layout="layout"
 		:margin="[15, 15, 15, 15]"
@@ -48,7 +50,7 @@ defineProps<{
 	box-sizing: border-box;
 	transition: all .350s ease-in-out;
 	transition-property: left, top, right;
-	@apply touch-none sm:!touch-auto;
+	@apply touch-none max-sm:!touch-auto;
 }
 
 .vue-grid-item.no-touch {

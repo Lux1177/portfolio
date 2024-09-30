@@ -9,7 +9,7 @@ const link = 'https://github.com/Lux1177/IPDC_project'
 
 <template>
 	<Project :project-link="link" :technologies="technologies" project-name="IPDC Finance">
-		<img alt="" class="w-full h-full object-cover" src="@/assets/img/ipdc-finance.png">
+		<img alt="IPDC Finance home page" class="w-full h-full object-cover" src="@/assets/img/ipdc-finance.png">
 	</Project>
 </template>
 

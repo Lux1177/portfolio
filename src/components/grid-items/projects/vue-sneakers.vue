@@ -9,7 +9,7 @@ const link = 'https://github.com/Lux1177/vue-sneakers'
 
 <template>
 	<Project :project-link="link" :technologies="technologies" project-name="Sneakers Shop">
-		<img alt="" class="w-full h-full object-cover" src="@/assets/img/vue-sneakers.png">
+		<img alt="Vue-Sneaakers shop home page" class="w-full h-full object-cover" src="@/assets/img/vue-sneakers.png">
 	</Project>
 </template>
 

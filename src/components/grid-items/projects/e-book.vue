@@ -10,7 +10,7 @@ const link = 'https://github.com/Lux1177/book-front'
 <template>
 	<Project :project-link="link" :technologies="technologies" project-name="E-Book website with Back-end"
 	         project-src="Team Project - Online course" project-src-icon="fluent:people-team-28-regular">
-		<img alt="" class="w-full h-full object-cover" src="@/assets/img/e-book.png">
+		<img alt="E-Book home page" class="w-full h-full object-cover" src="@/assets/img/e-book.png">
 	</Project>
 </template>
 

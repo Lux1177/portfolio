@@ -33,7 +33,8 @@ defineProps({
 	<div class="w-full h-full py-5 px-7 flex flex-col justify-between items-center pb-6">
 
 		<div
-			class="max-[480px]:aspect-square 2xl:mb-7 w-full aspect-video rounded-xl overflow-hidden shadow-lg img-shadow object-fill dark:shadow-slate-800">
+			class="2xl:mb-7 w-full aspect-video rounded-xl overflow-hidden shadow-lg
+			img-shadow object-fill dark:shadow-slate-800 z-10">
 			<slot></slot>
 		</div>
 
