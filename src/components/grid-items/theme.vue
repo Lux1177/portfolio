@@ -47,7 +47,7 @@ onMounted(() => {
 <style scoped>
 
 .icon {
-	@apply w-9 h-9 max-sm:w-12 max-sm:h-12;
+	@apply w-12 h-12;
 }
 
 </style>

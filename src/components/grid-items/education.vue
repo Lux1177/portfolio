@@ -40,7 +40,8 @@ const educations: IEducation[] = [
 		</div>
 		<div class="font-semibold max-sm:flex max-sm:flex-col justify-between max-sm:h-[85%]">
 			<div v-for="item in educations" class="grid grid-cols-3 mb-5 max-sm:flex max-sm:flex-col">
-				<div class="flex justify-start items-center col-span-2 font-semibold text-4xl max-sm:mb-2">
+				<div
+					class="flex justify-start items-center col-span-2 font-semibold text-[2.5rem]/normal max-sm:text-4xl max-sm:mb-2">
 					{{ item.type }}
 				</div>
 				<div class="col-span-1 flex flex-col items-end justify-center max-sm:items-start">
