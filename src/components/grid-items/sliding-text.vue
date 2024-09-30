@@ -63,7 +63,7 @@ import {Icon} from "@iconify/vue";
 <style scoped>
 
 .sliding-text-container {
-	@apply h-full flex items-center justify-center text-[#23204e] uppercase overflow-hidden text-[0.92rem]
+	@apply h-full flex items-center justify-center text-[#23204e] uppercase overflow-hidden text-[1rem]
 	pt-[0.175rem] mx-3;
 	-webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 	mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);

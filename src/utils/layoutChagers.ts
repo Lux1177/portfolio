@@ -62,7 +62,7 @@ export function screenLayout(layout: IGrid[], allLayout: IGrid[], aboutLayout: I
 			changeLayout(layout, mainWorkLayout)
 		}
 
-		rowHeight.value = 25
+		rowHeight.value = 27
 		isDraggable.value = true
 
 		changeLayout(allLayout, mainAllLayout)
