@@ -4,13 +4,13 @@
 
 
 	<div class="personal-info">
-		<div class="flex items-center max-sm:flex-col max-sm:gap-4 justify-center gap-10 mb-6">
+		<div class="flex items-center max-sm:flex-col max-sm:gap-4 justify-center gap-10 mb-8">
 			<div class="rounded-full w-1/4 max-sm:w-1/5 h-1/4"><img alt="avatar" class="rounded-full"
 			                                                        src="@/assets/img/hello.png">
 			</div>
-			<h2 class="text-[2.3rem] font-bold max-sm:text-center max-sm:font-semibold">Umarjon Alimdjanov</h2>
+			<h2 class="text-4xl font-bold max-sm:text-center max-sm:font-semibold">Umarjon Alimdjanov</h2>
 		</div>
-		<p class="font-light">I am passionate about building beautiful and functional user interfaces.</p>
+		<p class="font-light text-xl">I am passionate about building beautiful and functional user interfaces.</p>
 	</div>
 
 
