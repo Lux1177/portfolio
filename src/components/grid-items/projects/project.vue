@@ -34,7 +34,7 @@ defineProps({
 
 		<div
 			class="2xl:mb-7 w-full aspect-video rounded-xl overflow-hidden shadow-lg
-			img-shadow object-fill dark:shadow-slate-800 z-10">
+			img-shadow object-fill dark:shadow-slate-800 z-10 max-sm:aspect-5/3">
 			<slot></slot>
 		</div>
 

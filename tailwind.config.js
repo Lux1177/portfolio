@@ -37,6 +37,9 @@ export default {
 				borderDark: '#31363e',
 				wh: '#e7e9ee',
 			},
+			aspectRatio: {
+				'5/3': '5 / 3',
+			},
 		},
 	},
 
